@@ -1,0 +1,79 @@
+[debug] [2025-03-11T17:28:09.555Z] ----------------------------------------------------------------------
+[debug] [2025-03-11T17:28:09.557Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CalvinRegan-STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-03-11T17:28:09.557Z] CLI Version:   13.33.0
+[debug] [2025-03-11T17:28:09.557Z] Platform:      win32
+[debug] [2025-03-11T17:28:09.557Z] Node Version:  v20.13.1
+[debug] [2025-03-11T17:28:09.557Z] Time:          Tue Mar 11 2025 17:28:09 GMT+0000 (Greenwich Mean Time)
+[debug] [2025-03-11T17:28:09.558Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-11T17:28:09.675Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-11T17:28:09.676Z] > authorizing via signed-in user (calvinregan05@gmail.com)
+[debug] [2025-03-11T17:28:09.676Z] [iam] checking project webprogrammingca1-e8d40 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-11T17:28:09.677Z] Checked if tokens are valid: true, expires at: 1741717653639
+[debug] [2025-03-11T17:28:09.677Z] Checked if tokens are valid: true, expires at: 1741717653639
+[debug] [2025-03-11T17:28:09.677Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webprogrammingca1-e8d40:testIamPermissions [none]
+[debug] [2025-03-11T17:28:09.677Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webprogrammingca1-e8d40:testIamPermissions x-goog-quota-user=projects/webprogrammingca1-e8d40
+[debug] [2025-03-11T17:28:09.678Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webprogrammingca1-e8d40:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-11T17:28:10.497Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webprogrammingca1-e8d40:testIamPermissions 200
+[debug] [2025-03-11T17:28:10.497Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webprogrammingca1-e8d40:testIamPermissions {}
+[debug] [2025-03-11T17:28:10.497Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project webprogrammingca1-e8d40:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-03-11T17:28:10.497Z] Checked if tokens are valid: true, expires at: 1741717653639
+[debug] [2025-03-11T17:28:10.497Z] Checked if tokens are valid: true, expires at: 1741717653639
+[debug] [2025-03-11T17:28:10.498Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 [none]
+[debug] [2025-03-11T17:28:10.794Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 403
+[debug] [2025-03-11T17:28:10.794Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-03-11T17:28:10.795Z] Request to https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 had HTTP Error: 403, The caller does not have permission
+[debug] [2025-03-11T17:28:10.835Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\CalvinRegan-STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\CalvinRegan-STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project webprogrammingca1-e8d40. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-03-11T17:30:10.101Z] ----------------------------------------------------------------------
+[debug] [2025-03-11T17:30:10.103Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CalvinRegan-STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-03-11T17:30:10.103Z] CLI Version:   13.33.0
+[debug] [2025-03-11T17:30:10.103Z] Platform:      win32
+[debug] [2025-03-11T17:30:10.103Z] Node Version:  v20.13.1
+[debug] [2025-03-11T17:30:10.103Z] Time:          Tue Mar 11 2025 17:30:10 GMT+0000 (Greenwich Mean Time)
+[debug] [2025-03-11T17:30:10.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-11T17:30:10.221Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-11T17:30:10.221Z] > authorizing via signed-in user (calvinregan05@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\CalvinRegan-STUDENT\movie-finder
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-11T17:30:41.083Z] Using project from CLI flag: webprogrammingca1-e8d40
+[debug] [2025-03-11T17:30:41.084Z] Checked if tokens are valid: true, expires at: 1741717653639
+[debug] [2025-03-11T17:30:41.084Z] Checked if tokens are valid: true, expires at: 1741717653639
+[debug] [2025-03-11T17:30:41.085Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 [none]
+[debug] [2025-03-11T17:30:41.501Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 403
+[debug] [2025-03-11T17:30:41.501Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-03-11T17:30:41.502Z] Request to https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 had HTTP Error: 403, The caller does not have permission
+[debug] [2025-03-11T17:30:41.585Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/webprogrammingca1-e8d40 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\CalvinRegan-STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\CalvinRegan-STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project webprogrammingca1-e8d40. Please make sure the project exists and your account has permission to access it.
